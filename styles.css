@@ -1,0 +1,194 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+}
+
+h1{
+    font-size: 2.3rem;
+    color: #10abff;
+    margin-bottom: 20px;
+}
+
+p{
+    line-height: 35px;
+} 
+
+ul{
+    font-size: 17px;
+    line-height: 40px;
+    list-style: none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    border: dotted #E0F4FF 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 30px auto;
+}
+
+
+.introduction{
+    background-color: #E0F4FF;
+    color: #10abff;    
+}
+
+.dev{
+    text-decoration: underline;
+}
+
+
+.aboutMe{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe .profilePic{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.mySkills{
+    text-align: center;
+}
+
+.mySkills .flex{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    gap: 25px;
+}
+
+.mySkills .img{
+    margin-top: 40px;
+    height: 170px;
+    width: 300px;
+}
+
+.mySkills .content{
+    margin-top: 40px;
+    height: 220px;
+    width: 400px;
+}
+
+.projects{
+    text-align: center;
+}
+
+.projects #nagivate{
+    padding-bottom: 25px;
+}
+
+.projects .programs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.projects .programs .logo{
+    height: 65px; 
+    width: 65px;
+}
+
+.contactMe{
+    text-align: center;
+}
+
+.contactMe .btn{
+    margin-top: 30px;
+    border: none;
+    color: white;
+    background: #10abff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E0F4FF;   
+}
+
+.footer a{
+    color: #10abff;
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+
+   h1{
+    font-size: 2rem;
+   }
+
+   #fancy{
+    font-size: 1.3rem;
+   }
+
+   p{
+    max-width: 300px;
+    font-size: 14px;
+   }
+
+    #skills{
+        height: 500px;
+    }
+
+    .mySkills h1{
+        margin-bottom: 30px;
+    }
+
+    .mySkills .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .mySkills .img, .mySkills .content{
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .mySkills .content ul{
+        font-size: 14px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .projects .programs{
+        gap: 10px;
+    }
+
+    .projects .programs .logo{
+        height: 50px; 
+        width: 50px;
+    }
+
+}
